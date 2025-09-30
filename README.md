@@ -13,4 +13,4 @@ You can follow tutorials to set up extraction for the above extraction plugins [
 
 ## Data Source and Licence
 
-All the examples use free data from ©swisstopo. You can find the term of use on the swisstopo website : https://www.swisstopo.admin.ch/en/terms-of-use-free-geodata-and-geoservices
+All examples use free data from ©swisstopo. You can find the term of use on the swisstopo website : https://www.swisstopo.admin.ch/en/terms-of-use-free-geodata-and-geoservices
