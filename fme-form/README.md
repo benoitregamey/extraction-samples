@@ -1,1 +1,1 @@
-# FME Form (Version 2)
+# Set up an extraction with FME Form (Desktop)
