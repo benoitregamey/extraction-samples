@@ -16361,7 +16361,7 @@
         "ProductGuid": "f698536d-2ec9-4a41-a262-c62f100fd7d8",
         "ProductLabel": "Buildings swissTLMRegio",
         "Parameters": {
-            "FORMAT": "SHP",
+            "FORMAT": "GEOJSON",
             "PROJECTION": "SWITZERLAND95",
             "LAST_ORDER": "2025-11-06T08:56:23",
             "REMARK": "",
