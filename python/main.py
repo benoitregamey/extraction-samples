@@ -42,8 +42,6 @@ if __name__ == "__main__":
         format = "GeoJSON"
     elif parameters["properties"]["Parameters"]["FORMAT"] == "GPKG":
         format = "GPKG"
-    elif parameters["properties"]["Parameters"]["FORMAT"] == "SHP":
-        format = "ESRI Shapefile"
     elif parameters["properties"]["Parameters"]["FORMAT"] == "DXF":
         format = "DXF"
 
