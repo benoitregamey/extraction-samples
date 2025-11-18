@@ -1,15 +1,11 @@
 # Extraction examples for [Extract](https://github.com/asit-asso/extract)
 
-This repository contains extraction script samples and examples to demonstrate how to use the following extraction plugins of the web application Extract :
+This repository contains extraction script samples and examples to demonstrate how to use the following extraction plugins of the web application Extract. For each plugin, you can follow up tutorials how to set up an extraction :
 
-* [FME Form (Desktop)](./fme-form/)
-* [FME Flow (Server)](./fme-flow/)
-* [Python](./python/)
-* [QGIS Atlas Server](./qgis-atlas-server/)
-
-## Usage
-
-You can follow tutorials to set up extraction for the above extraction plugins [here](https://benoitregamey.github.io/extract/how-to/extract-viageo/).
+* [FME Form (Desktop)](https://benoitregamey.github.io/extract/how-to/fme-form)
+* [FME Flow (Server)](https://benoitregamey.github.io/extract/how-to/fme-flow)
+* [Python](https://benoitregamey.github.io/extract/how-to/python)
+* [QGIS Atlas Server](https://benoitregamey.github.io/extract/how-to/qgis-atlas-server)
 
 ## Data Source and Licence
 
