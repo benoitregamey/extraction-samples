@@ -1,14 +1,14 @@
-# Impression Atlas QGIS Server
+# Additional doc for the QGIS Atlas Print Plugin
 
-## Interroger les services pour l'impression
+This explains how to plugin interrogates the QGIS service to print pages.
 
-La chaîne est la suivante : `GetProjectSettings` -> `GetFeature` -> `GetPrint`
+The plugin calls these methods one after another : `GetProjectSettings` -> `GetFeature` -> `GetPrint`
 
-Obtenir la définition des Atlas : `http://127.0.0.1:8888/qgis-server?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetProjectSettings`
+Get the definition of Atlas : `http://127.0.0.1:8888/qgis-server?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetProjectSettings`
 
-On trouve la couche de coverage avec ce Xpath : ` /WMS_Capabilities/Capability/ComposerTemplates/ComposerTemplate[@name='myplan']/@atlasCoverageLayer`
+The coverage layer can be found with this Xpath : ` /WMS_Capabilities/Capability/ComposerTemplates/ComposerTemplate[@name='myplan']/@atlasCoverageLayer`
 
-On peut lister les features de la couche de coverage qui intersectent une zone :
+We can list the features of the coverage layer that intersect an area:
 `POST http://127.0.0.1:8888/qgis-server?`
 
 ```xml
@@ -31,8 +31,8 @@ On peut lister les features de la couche de coverage qui intersectent une zone :
 </wfs:GetFeature>
 ```
 
-On peut extraire les IDs des features (xpath ci dessous): :
+You can extract the IDs of the coverage layer features (xpath below):
 `/wfs:FeatureCollection/gml:featureMember/qgs:MY_COVERAGE_LAYER/@gml:id` (structure : `<featureType>.<id>`)
 
-Avec les IDs retournés, on peut lancer un print :
-`http://127.0.0.1:8888/qgis-server?SERVICE=WMS&REQUEST=GetPrint&CRS=EPSG:2056&TEMPLATE=mybeautifullayout&FORMAT=pdf&ATLAS_PK=124`
+With the returned IDs, we can run a print of one or several pages (separated by `,`) :
+`http://127.0.0.1:8888/qgis-server?SERVICE=WMS&REQUEST=GetPrint&CRS=EPSG:2056&TEMPLATE=mybeautifullayout&FORMAT=pdf&ATLAS_PK=124,125`
