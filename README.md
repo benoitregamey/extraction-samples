@@ -5,7 +5,7 @@ This repository contains extraction script samples and examples to demonstrate h
 * [FME Form (Desktop)](https://benoitregamey.github.io/extract/how-to/fme-form)
 * [FME Flow (Server)](https://benoitregamey.github.io/extract/how-to/fme-flow)
 * [Python](https://benoitregamey.github.io/extract/how-to/python)
-* [QGIS Atlas Server](https://benoitregamey.github.io/extract/how-to/qgis-atlas-server)
+* [QGIS Atlas Server](https://benoitregamey.github.io/extract/how-to/qgis-server-atlas)
 
 ## Data Source and Licence
 
