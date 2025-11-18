@@ -1,1 +1,0 @@
-# QGIS Atlas Server
